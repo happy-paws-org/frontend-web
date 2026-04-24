@@ -35,10 +35,6 @@ spec:
             name: frontend-web-config
         - secretRef:
             name: frontend-web-secret
-        securityContext:
-          runAsNonRoot: true
-          runAsUser: 101
-          allowPrivilegeEscalation: false
         readinessProbe:
           httpGet:
             path: /
