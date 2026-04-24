@@ -4,4 +4,6 @@ metadata:
   name: frontend-web-config
 data:
   ENV: dev
-  VITE_API_GATEWAY_URL: http://10.0.0.123:30000
+  VITE_APP_NAME: Happy Paws
+  VITE_ENV: development
+  VITE_API_GATEWAY_URL: /api
