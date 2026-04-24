@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-web-config
+data:
+  ENV: prod
+  VITE_APP_NAME: Happy Paws
+  VITE_ENV: production
+  VITE_API_GATEWAY_URL: http://13.234.34.157:30000
