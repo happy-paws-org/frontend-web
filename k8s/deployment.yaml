@@ -33,6 +33,8 @@ spec:
         envFrom:
         - configMapRef:
             name: frontend-web-config
+        - secretRef:
+            name: frontend-web-secret
         securityContext:
           runAsNonRoot: true
           runAsUser: 101
