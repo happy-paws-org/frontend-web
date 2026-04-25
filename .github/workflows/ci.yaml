@@ -1,4 +1,4 @@
-name: Frontend web CI
+name: Frontend Web CI
 
 on:
   push:
@@ -18,3 +18,4 @@ jobs:
       service_name: frontend-web
       node_version: "20"
       dockerfile: Dockerfile
+    secrets: inherit
