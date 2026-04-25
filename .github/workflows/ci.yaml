@@ -1,3 +1,4 @@
+name: Frontend Web CI
 name: Frontend web CI
 
 on:
@@ -13,6 +14,12 @@ permissions:
 
 jobs:
   ci:
+    uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yaml@develop
+    with:
+      service_name: frontend-web
+      node_version: "20"
+      dockerfile: Dockerfile
+    secrets: inherit
     uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yaml@main
     with:
       service_name: frontend-web
