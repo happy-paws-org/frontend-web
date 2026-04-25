@@ -9,6 +9,6 @@ on:
 
 jobs:
   ci:
-    uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yml@main
+    uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yaml@main
     with:
       service_name: frontend-web
