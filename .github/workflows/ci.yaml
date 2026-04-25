@@ -7,8 +7,12 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   ci:
-    uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yaml@main
+    uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yml@main
     with:
       service_name: frontend-web
