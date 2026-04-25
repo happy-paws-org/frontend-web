@@ -1,0 +1,20 @@
+name: Frontend Web CI
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  ci:
+    uses: happy-paws-org/happy-paws-platform/.github/workflows/frontend-ci.yaml@main
+    with:
+      service_name: frontend-web
+      node_version: "20"
+      dockerfile: Dockerfile
